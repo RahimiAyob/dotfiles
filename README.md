@@ -1,5 +1,4 @@
-# dotfiles
-This is my archlinux dotfiles
+# MY ARCH LINUX DOTFILES
 
 ## All DE & programs I used
 1. i3
