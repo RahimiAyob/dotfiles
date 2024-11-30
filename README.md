@@ -14,4 +14,5 @@
 11. flameshot
 12. rofi
 13. picom
+14. nm-applet
     
