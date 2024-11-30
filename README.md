@@ -13,4 +13,5 @@
 10. vim
 11. flameshot
 12. rofi
+13. picom
     
