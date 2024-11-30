@@ -15,4 +15,5 @@
 12. rofi
 13. picom
 14. nm-applet
+15. firefox
     
