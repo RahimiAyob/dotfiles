@@ -1,3 +1,7 @@
+call plug#begin()
+Plug '~/.vim/pack/git-plugins/start/vim-c-cpp-modern'
+call plug#end()
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -91,3 +95,6 @@ nnoremap dh d0
 nnoremap dj <S-v>Gx
 nnoremap dk <S-v>ggx
 inoremap jk <esc>
+set number
+nnoremap rn :w<CR>:!g++ % -o a.out && ./a.out && rm a.out<CR>
+
