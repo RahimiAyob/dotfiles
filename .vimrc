@@ -8,6 +8,7 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 "Plug 'https://github.com/Stoozy/vimcord.git'
 call plug#end()
 
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -24,35 +25,43 @@ set nocompatible
 syntax on
 
 " Add numbers to each line on the left-hand side.
-" set number
+set number
 
 set wildmenu
 set wildmode=list:longest
+
+" --------------------------------------------------------------------------------------"
+"From here is my own config made by myself"
+
+"Somehow this got here
+set timeoutlen=1000
+set ttimeoutlen=0
+set relativenumber
+
+"----------------------------------------Movements-----------------------------------------"
 nnoremap gk gg 
 nnoremap gj G 
 nnoremap gh 0
 nnoremap gl $
-set timeoutlen=1000
-set ttimeoutlen=0
+nnoremap t Go
+
+"----------------------------------------Controls-----------------------------------------"
 " inoremap jj <esc>
 nnoremap da ggVGx
 nnoremap ca gg<S-v>G"+yy
-nnoremap t Go
 " inoremap ; <end>;
-nnoremap <c-r> <S-F10><F12>
-nnoremap <c-e> <S-F12> 
-"nnormap YY "+yy
-"nnormap Y "+y
 
-
-nnoremap ya gg<S-v>G"+y
 nnoremap dl d$
 nnoremap dh d0
 nnoremap dj <S-v>Gx
 nnoremap dk <S-v>ggx
 inoremap jk <esc>
-set number
 nnoremap rn :w<CR>:!g++ % -o a.out && ./a.out && rm a.out<CR>
 " nnoremap <space> i<space><esc>
+
+
+"----------------------------------------Plugins-----------------------------------------"
 nnoremap <space>f :CtrlP<CR>
 nnoremap <space>t :NERDTree<CR>
+
+
